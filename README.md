@@ -2,6 +2,8 @@
 
 Shows a live Google Calendar on a Waveshare e-ink panel
 
+![Image of Google Calendar on an e-ink display](images/calendar.jpg)
+
 ## Requirements
 
 ### Hardware
@@ -56,7 +58,7 @@ you must update `services/inkcal-screen.service` with your new password.
 
 You do not need to set a view-only password (press `n`).
 
-### Install unit files
+### Install unit files:
 
 If you used a different vnc password, make sure to edit `services/inkcal-screen.service` with your new password. 
 You can also change the resolution and e-ink driver here if you are using a different e-ink panel. You'll also need
@@ -90,7 +92,7 @@ $ sudo systemctl start inkcal-screen
 The `inkcal-calendar` service takes 45 seconds to start, be patient! If everything worked, you should see the
 Google login screen on your eink panel.
 
-### Set up Google Calendar
+### Set up Google Calendar:
 
 You should now be able to VNC into your Pi at `<pi's IP address>:1` with the password `calendar` and log into your 
 Google account. The text starts out a bit small, but you can use my `style.css` with the Firefox extension 
