@@ -1,0 +1,15 @@
+# start a tightvnc service on display 1 with geometry 1200x825
+
+[Unit]
+Description=tightvncserver
+After=lightdm.service
+
+[Service]
+Type=forking
+User=pi
+Restart=always
+ExecStart=/usr/bin/tightvncserver -name inkcal -geometry 1200x825 :1
+ExecStop=/usr/bin/tightvncserver -kill :1
+
+[Install]
+WantedBy=multi-user.target

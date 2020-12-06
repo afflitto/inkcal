@@ -1,0 +1,18 @@
+# open google calendar in firefox in kiosk mode
+
+[Unit]
+Description=inkcal calendar
+After=tightvnc.service
+
+[Service]
+Type=simple
+User=pi
+Restart=on-failure
+Environment="DISPLAY=:1"
+ExecStart=/usr/bin/firefox https://calendar.google.com -kiosk
+# page should be done loading within 45 seconds
+# this way the screen service only starts once the calendar is up
+ExecStartPost=/bin/sleep 45
+
+[Install]
+WantedBy=multi-user.target

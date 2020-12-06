@@ -1,0 +1,14 @@
+# start papertty vnc
+
+[Unit]
+Description=inkcal screen
+After=inkcal-calendar.service
+
+[Service]
+Type=simple
+Restart=always
+User=root
+ExecStart=/usr/local/bin/papertty --driver IT8951 vnc --password calendar --display 1
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,50 @@
+/* use with the stylish extension to apply google calendar css */
+
+/* hide plus button */
+.dwlvNd {
+    visibility: hidden;
+}
+
+
+/*lines*/
+.t8qpF, .PhLhOd {
+    border-right: #dddddd 2px solid;
+}
+
+body[data-viewfamily=EVENT] .SGWAac {
+    border-top: #dddddd 2px solid;
+}
+
+.QIadxc {
+    border-bottom: #dddddd 2px solid;
+}
+
+
+/*date numbers*/
+.yzYBvd {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+/*event text*/
+.g3dbUc, .g3dbUc .qqMC3e{
+    font-size: 20px;
+    font-weight: 900;
+    height: 36px;
+}
+
+/*set em size for event vert spacing*/
+.rES0Be {
+    overflow: visible;
+    font-size: 38px;
+}
+
+/*bold month*/
+.rSoRzd {
+    font-weight: 900;
+}
+
+/*prevent g's being cut off in events*/
+.yzifAd {
+    height: 22px;
+}
